@@ -1,0 +1,36 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "🌸 Valle: Debug in Chrome",
+      "type": "chrome",
+      "request": "launch",
+      "port": 3000,
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "/*": "${workspaceFolder}/*"
+      },
+      "preLaunchTask": "Valle: Start Development"
+    },
+    {
+      "name": "🌸 Valle: Debug in Edge",
+      "type": "msedge",
+      "request": "launch",
+      "port": 3000,
+      "url": "http://localhost:3000",
+      "webRoot": "${workspaceFolder}",
+      "sourceMapPathOverrides": {
+        "/*": "${workspaceFolder}/*"
+      },
+      "preLaunchTask": "Valle: Start Development"
+    },
+    {
+      "name": "🌸 Valle: Attach to Chrome",
+      "type": "chrome",
+      "request": "attach",
+      "port": 9222,
+      "webRoot": "${workspaceFolder}"
+    }
+  ]
+}
