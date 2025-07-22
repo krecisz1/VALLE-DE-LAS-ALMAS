@@ -1,3 +1,4 @@
+// vite.config.ts
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
@@ -10,9 +11,8 @@ export default defineConfig({
       '@': resolve(__dirname, './'),
       '@/components': resolve(__dirname, './components'),
       '@/styles': resolve(__dirname, './styles'),
-      // ⚠️ Esto normalmente no se necesita:
+      // ⚠️ Para archivos estáticos usa directamente: /archivo.png
       // '@/public': resolve(__dirname, './public')
-      // Si quieres acceder a archivos de `public`, usa rutas absolutas: /imagen.png
     }
   },
   optimizeDeps: {
