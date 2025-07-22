@@ -34,10 +34,5 @@
   ],
   "env": {
     "NODE_VERSION": "18"
-  },
-  "functions": {
-    "app/**": {
-      "runtime": "nodejs18.x"
-    }
   }
 }
