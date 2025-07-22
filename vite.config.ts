@@ -7,11 +7,13 @@ export default defineConfig({
   plugins: [react()],
   resolve: {
     alias: {
-      "@": resolve(__dirname, "./"),
-      "@/components": resolve(__dirname, "./components"),
-      "@/styles": resolve(__dirname, "./styles"),
-      "@/public": resolve(__dirname, "./public"),
-    },
+      '@': resolve(__dirname, './'),
+      '@/components': resolve(__dirname, './components'),
+      '@/styles': resolve(__dirname, './styles'),
+      // ⚠️ Esto normalmente no se necesita:
+      // '@/public': resolve(__dirname, './public')
+      // Si quieres acceder a archivos de `public`, usa rutas absolutas: /imagen.png
+    }
   },
   optimizeDeps: {
     include: ['react', 'react-dom', 'lucide-react', 'qrcode']
@@ -23,7 +25,7 @@ export default defineConfig({
       output: {
         manualChunks: {
           vendor: ['react', 'react-dom'],
-          ui: ['lucide-react', '@radix-ui/react-dialog', '@radix-ui/react-popover'],
+          ui: ['lucide-react', '@radix-ui/react-dialog', '@radix-ui/react-popover']
         }
       }
     }
@@ -31,7 +33,7 @@ export default defineConfig({
   server: {
     port: 3000,
     open: true,
-    host: true
+    host: true // permite acceso desde red local
   },
   preview: {
     port: 4173,
