@@ -6,7 +6,7 @@ import {
   CheckIcon,
   ChevronDownIcon,
   ChevronUpIcon,
-} from "lucide-react@0.487.0";
+} from "@radix-ui/react-select@2.1.6";
 
 import { cn } from "./utils";
 

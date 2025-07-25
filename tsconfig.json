@@ -26,20 +26,21 @@
       "@/*": ["./*"],
       "@/components/*": ["./components/*"],
       "@/styles/*": ["./styles/*"]
-      // ⚠️ REMOVIDO: "@/public/*"
     }
   },
   "include": [
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
-    "**/*.jsx"
+    "**/*.jsx",
+    "vite.config.ts",
+    "setup.js"
   ],
   "exclude": [
+    "vite.config.d.ts",
     "node_modules",
     "dist",
     "build"
-    "vite.config.ts"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
